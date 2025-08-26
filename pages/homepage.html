@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commerce Hub - Discover What You Love</title>
+    <title>Commerce Hub — Discover What You Love</title>
     <link rel="stylesheet" href="../css/main.css" />
     <meta name="description" content="Discover what you love at Commerce Hub - Your intelligent marketplace for personalized shopping experiences" />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcommerceh6648back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+    
 </head>
 <body class="bg-background">
     <!-- Navigation Header -->
@@ -61,38 +61,74 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 overflow-hidden">
-        <div class="absolute inset-0 bg-white opacity-80"></div>
+    <!-- Hero Section (Refreshed) -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500"></div>
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,white,transparent_40%),radial-gradient(circle_at_80%_0%,white,transparent_35%)]"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-text-primary mb-6">
-                    Discover What You <span class="text-gradient">Love</span>
-                </h1>
-                <p class="text-xl text-secondary-600 mb-8 max-w-2xl mx-auto">
-                    Your intelligent marketplace for personalized shopping experiences. Where every purchase tells a story.
-                </p>
-                
-                <!-- Smart Search Bar -->
-                <div class="max-w-2xl mx-auto mb-12">
-                    <div class="relative">
-                        <input type="text" placeholder="Search products, brands, or categories..." class="w-full px-6 py-4 pl-12 pr-20 text-lg border-2 border-border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200" />
-                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                        </svg>
-                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex items-center justify-center mt-4 space-x-4 text-sm text-secondary-500">
-                        <span>Popular:</span>
-                        <button class="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full hover:bg-secondary-200 transition-colors">Electronics</button>
-                        <button class="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full hover:bg-secondary-200 transition-colors">Fashion</button>
-                        <button class="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full hover:bg-secondary-200 transition-colors">Home & Garden</button>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Shop Smarter. Discover Faster.</h1>
+                    <p class="text-primary-100 text-lg md:text-xl mb-8">Curated products, trusted merchants, and personalized picks—everything you love in one modern marketplace.</p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="category_collection.html" class="bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">Explore Categories</a>
+                        <a href="about_commerce_hub.html" class="bg-black/20 backdrop-blur px-6 py-3 rounded-lg font-semibold hover:bg-black/30 transition-colors text-white border border-white/20">Why Commerce Hub</a>
                     </div>
                 </div>
+                <div>
+                    <div class="bg-white rounded-2xl shadow-subtle p-4 md:p-6">
+                        <div class="relative">
+                            <input type="text" placeholder="Search products, brands, or categories" class="w-full px-5 py-4 pl-12 pr-24 text-base border-2 border-border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all" />
+                            <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium">Search</button>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                            <span class="text-secondary-500">Trending:</span>
+                            <button class="px-3 py-1 rounded-full bg-surface hover:bg-secondary-100 transition">Laptops</button>
+                            <button class="px-3 py-1 rounded-full bg-surface hover:bg-secondary-100 transition">Headphones</button>
+                            <button class="px-3 py-1 rounded-full bg-surface hover:bg-secondary-100 transition">Sneakers</button>
+                            <button class="px-3 py-1 rounded-full bg-surface hover:bg-secondary-100 transition">Home Decor</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories Grid (New) -->
+    <section class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-text-primary">Browse by Category</h2>
+                <a href="category_collection.html" class="text-primary font-medium hover:text-primary-700">See all →</a>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-primary mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5a2 2 0 012-2h3v4H3V5zm0 6h5v4H5a2 2 0 01-2-2v-2zm8-8h5a2 2 0 012 2v2h-7V3zm0 6h7v4h-7v-4zm0 6h7v2a2 2 0 01-2 2h-5v-4zM3 17a2 2 0 002 2h3v-4H3v2z"/></svg>
+                    <span class="font-medium">Electronics</span>
+                </a>
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-accent mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C9 3 7 5 7 8c0 2 2 5 5 10 3-5 5-8 5-10 0-3-2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg>
+                    <span class="font-medium">Fashion</span>
+                </a>
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-secondary-700 mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M4 10V4h16v6H4zm0 10v-6h16v6H4z"/></svg>
+                    <span class="font-medium">Home & Living</span>
+                </a>
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-success mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/></svg>
+                    <span class="font-medium">Beauty & Health</span>
+                </a>
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-warning mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4h10l1 7H6l1-7zm-1 9h12v7H6v-7z"/></svg>
+                    <span class="font-medium">Groceries</span>
+                </a>
+                <a href="category_collection.html" class="group bg-surface hover:bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center transition shadow-subtle">
+                    <svg class="w-8 h-8 text-secondary-500 mb-2" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4V6zm2 4h12v10H6V10z"/></svg>
+                    <span class="font-medium">Accessories</span>
+                </a>
             </div>
         </div>
     </section>
