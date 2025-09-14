@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sell Your Product - Commerce Hub</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="bg-background">
+    <!-- Include header -->
+    <!-- Assuming header is included via server or templating, else copy header here -->
+
+    <main class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md mt-10">
+        <h1 class="text-3xl font-bold mb-6 text-center">Sell Your Product</h1>
+        <form id="sellProductForm" class="space-y-6" action="#" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="productName" class="block text-sm font-medium text-gray-700">Product Name</label>
+                <input type="text" id="productName" name="productName" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+            </div>
+            <div>
+                <label for="productDescription" class="block text-sm font-medium text-gray-700">Description</label>
+                <textarea id="productDescription" name="productDescription" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md p-2"></textarea>
+            </div>
+            <div>
+                <label for="productCategory" class="block text-sm font-medium text-gray-700">Category</label>
+                <select id="productCategory" name="productCategory" required class="mt-1 block w-full border border-gray-300 rounded-md p-2">
+                    <option value="">Select a category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home_living">Home & Living</option>
+                    <option value="beauty_health">Beauty & Health</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+            <div>
+                <label for="productPrice" class="block text-sm font-medium text-gray-700">Price ($)</label>
+                <input type="number" id="productPrice" name="productPrice" min="0" step="0.01" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+            </div>
+            <div>
+                <label for="productImage" class="block text-sm font-medium text-gray-700">Product Image</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*" required class="mt-1 block w-full" />
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold">List Product</button>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        // Basic client-side form handling (for demo only)
+        document.getElementById('sellProductForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Product listing submitted! (Functionality to be implemented)');
+            // Here you would handle form submission to backend or API
+            this.reset();
+        });
+    </script>
+</body>
+</html>
